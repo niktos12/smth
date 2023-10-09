@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Marcellus&display=swap');
+
+
+:root{
+    --border-radius-for-img: 25px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Marcellus', serif;
+}
+header{
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    left: -50px;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    font-size: 30px;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 0;
+    margin-right: 50px;
+    transition: .5 ease;
+}
+body{
+    background-color: rgb(37, 4, 68);
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; */
+}
+.a-nav{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+.nav-div .btn-login{
+background-color: #fff;
+color: rgb(37, 4, 68);
+padding: 10px 40px;
+margin-left: 50px;
+border-radius: 10px;
+cursor: pointer;
+font-size: 16px;
+border-color: #fff;
+font-weight: 500;
+outline: none;
+transition: .5s ease;
+margin-right: -100px;
+}
+.btn-login:hover{
+background: rgb(37, 4, 68);
+color: #fff;
+}
+.nav-div a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -6px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+}
+.nav-div a:hover::after{
+    transform: scaleX(1);
+}
+.h1-present{
+    margin-top: 150px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* .grider-for-notes{
+    display: grid;
+    grid-template-columns: 390px 390px 390px;
+    grid-template-rows: auto;
+    column-gap: 25px;
+    row-gap: 25px;
+    max-height: 300px;
+} */
+.note1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+}
+.h3-note1{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.p-note1{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.img-note1{
+    width: 100%;
+    border-radius: var(--border-radius-for-img);
+}
+.note2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+}
+.h3-note2{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.img-note2{
+    width: 100%;
+    height: 150px;
+    border-radius: var(--border-radius-for-img);
+}
+.p-note2{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.note3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+}
+.h3-note3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.img-note3{
+    width: 100%;
+    height: 150px;
+    border-radius: var(--border-radius-for-img);
+}
+.p-note3{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.img-note4{
+    width: 100%;
+    height: 150px;
+    border-radius: var(--border-radius-for-img);
+}
+.h3-note4{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.p-note4{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.note4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+}
+.note5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+}
+.p-note5{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.h3-note5{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.img-note5{
+    width: 100%;
+    height: 150px;
+    border-radius: var(--border-radius-for-img);
+}
+.note6{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+}
+.p-note6{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.h3-note6{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.img-note6{
+    width: 100%;
+    height: 150px;
+    border-radius: var(--border-radius-for-img);
+}
+.notes{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 25px;
+    row-gap: 25px;
+    height: auto;
+}
+/* 390px 390px 390px */
+.conclusion{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 100px;
+}
+.conclusions-p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 50px;
+    line-height: 30px;
+}
+.p-conclusion-steam{
+    margin-bottom: 20px;
+}
+.p-conclusion-epic-games{
+    margin-bottom: 20px;
+}
+.p-conclusion-ubisoft{
+    margin-bottom: 20px;
+}
+.p-conclusion-origin{
+    margin-bottom: 20px;
+}
+.p-conclusion-gog{
+    margin-bottom: 20px;
+}
+.p-conclusion-blizzard{
+    margin-bottom: 20px;
+}
+.p-conclusion-final{
+    font-size: 26px;
+}
+.footer-nav{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+    background-color: rgba(12, 9, 15, 0.842);
+    padding: 50px 50px 0;
+    height: auto;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    
+}
+.a-footer{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+.a-footer:hover{
+    text-decoration:underline;
+}
+.figcaption-final{
+    color: #ffffff07;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+
+
